@@ -1,0 +1,35 @@
+@font-face {
+    font-family: IranSans;
+    src: url(Iranian-Sans.ttf);
+}
+
+body {
+    direction: rtl;
+    background-color: #f2f1f8;
+    color: #121416;
+    font-family: IranSans;
+}
+
+.navlink:hover {
+    color: #ED1D24;
+    border: #ED1D24 2px solid;
+}
+
+
+#change:hover,
+#charge:hover {
+    opacity: 0.2;
+}
+
+.overlay {
+    position: relative;
+    opacity: 0;
+}
+
+.container1:hover .overlay,
+.container1:hover .overlay {
+    opacity: 1;
+    position: relative;
+    top: 50%;
+    right: 50%;
+}
