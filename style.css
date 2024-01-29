@@ -3,6 +3,10 @@
     src: url(Iranian-Sans.ttf);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     direction: rtl;
     background-color: #f2f1f8;
