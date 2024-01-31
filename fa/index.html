@@ -8,9 +8,13 @@
     <link rel="stylesheet" href="../style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="../script.js"></script>
-    <link rel="stylesheet" href="../owl/owl.carousel.css">
-    <script src="../jquery-3.7.1.min.js"></script>
-    <script src="../owl/owl.carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('#image-carousel').mount();
+        });
+    </script>
 </head>
 
 <body>
@@ -49,84 +53,78 @@
         </section>
     </header>
     <main class="flex flex-col items-center justify-center">
-        <section class="flex justify-between w-[85%] mt-[100px]">
+        <section class="flex justify-center w-[85%] mt-[100px]">
             <h2 class="text[#121416] text-[35px] mb-[60px] mt-[20px] font-bold">
                 فروش انواع
                 <div class="text-[#ED1D24]">باتری خودرو</div>
             </h2>
         </section>
-        <section class="flex flex-col justify-center w-[80%] mb-[200px]" id="services">
-            <h2 class="text-[25px] mb-[20px] mt-[120px]">دسته بندی ها</h2>
-            <hr class="border-[1.5px] border-[#b6b5b5]">
-            <div class="flex w-[100%] mt-[25px]">
-                <div class="w-[25%] h-[350px] px-5">
-                    <a href="saba/index.html">
-                        <div class="rounded-2 border-[2px] border-[black] p-5 ps-2 h-[100%] w-[100%]">
-                            <img src="../images/saba.png" alt="">
-                            <p></p>
-                        </div>
-                    </a>
+        <div class="flex flex-col w-[100%] items-center bg-white">
+            <section class="flex flex-col justify-center bg-white w-[80%] mb-[200px]" id="services">
+                <h2 class="text-[25px] mb-[20px] mt-[120px]">دسته بندی ها</h2>
+                <hr class="border-[1.5px] border-[#b6b5b5]">
+                <div class="flex w-[100%] mt-[25px]">
+                    <div class="w-[25%] h-[350px] px-5">
+                        <a href="saba/index.html">
+                            <div class="rounded-2 border-[2px] border-[black] p-5 ps-2 h-[100%] w-[100%]">
+                                <img src="../images/saba.png" alt="">
+                                <p></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="w-[25%] h-[350px] px-5">
+                        <a href="">
+                            <div class="rounded-2 border-[2px] border-[black] p-5 h-[100%] w-[100%]">
+                                <img src="../images/Vista.png" class="mt-[55px]" alt="">
+                                <p></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="w-[25%] h-[350px] px-5">
+                        <a href="">
+                            <div class="rounded-2 border-[2px] border-[black] p-5 h-[100%] w-[100%]">
+                                <img src="../images/pasargad.png" alt="">
+                                <p></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="w-[25%] h-[350px] px-5">
+                        <a href="">
+                            <div class="rounded-2 border-[2px] border-[black] p-5 h-[100%] w-[100%]">
+                                <img src="../images/vaya.png" class="mt-[25px]" alt="">
+                                <p></p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div class="w-[25%] h-[350px] px-5">
-                    <a href="">
-                        <div class="rounded-2 border-[2px] border-[black] p-5 h-[100%] w-[100%]">
-                            <img src="../images/Vista.png" class="mt-[55px]" alt="">
-                            <p></p>
-                        </div>
-                    </a>
+            </section>
+            <section class="flex flex-col w-[80%] mb-[200px]">
+                <h2 class="text-[25px] mb-[20px]">محصولات <span class="font-bold">پر فروش</span></h2>
+                <hr class="border-[1.5px] border-[#b6b5b5]">
+            </section>
+            <section id="image-carousel" class="splide" data-splide='{"type":"loop","perPage":3}'
+                aria-label="Beautiful Images">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="../images/ARMO.png" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="../images/DEVON.png" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="../images/vaya.png" alt="">
+                        </li>
+                    </ul>
                 </div>
-                <div class="w-[25%] h-[350px] px-5">
-                    <a href="">
-                        <div class="rounded-2 border-[2px] border-[black] p-5 h-[100%] w-[100%]">
-                            <img src="../images/pasargad.png" alt="">
-                            <p></p>
-                        </div>
-                    </a>
-                </div>
-                <div class="w-[25%] h-[350px] px-5">
-                    <a href="">
-                        <div class="rounded-2 border-[2px] border-[black] p-5 h-[100%] w-[100%]">
-                            <img src="../images/vaya.png" class="mt-[25px]" alt="">
-                            <p></p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="flex flex-col w-[80%] mb-[200px]">
-            <h2 class="text-[25px] mb-[20px]">محصولات <span class="font-bold">پر فروش</span></h2>
-            <hr class="border-[1.5px] border-[#b6b5b5]">
-        </section>
-        <section class="w-[80%]">
-            <div class="owl-carousel owl-theme">
-                <article class="item">
-                    <img src="../images/ARMO.png" alt="">
-                </article>
-                <article class="item">
-                    <img src="../images/DEVON.png" alt="">
-                </article>
-                <article class="item">
-                    <img src="../images/saba2.png" alt="">
-                </article>
-            </div>
-        </section>
+            </section>
+        </div>
+
     </main>
     <footer>
 
     </footer>
-    <script>$('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 3
-                }
-            }
-        })</script>
+
 </body>
 
 </html>
