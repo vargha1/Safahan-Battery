@@ -19,21 +19,27 @@ body {
     border: #ED1D24 2px solid;
 }
 
-
-#change:hover,
-#charge:hover {
-    opacity: 0.2;
+.carousel {
+    background: #EEE;
 }
 
-.overlay {
-    position: relative;
-    opacity: 0;
+.carousel-cell {
+    width: 66%;
+    height: 350px;
+    margin-right: 10px;
+    background: #8C8;
+    border-radius: 5px;
+    border: solid 1px transparent;
 }
 
-.container1:hover .overlay,
-.container1:hover .overlay {
-    opacity: 1;
-    position: relative;
-    top: 50%;
-    right: 50%;
+.carousel-cell:hover {
+    border-color: #ED1D24;
+}
+
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
 }

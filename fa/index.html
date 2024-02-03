@@ -6,19 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Safahan Battery | صفاهان باتری</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="canonical" href="https://example.com" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="../script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            new Splide('#image-carousel').mount();
-        });
-    </script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 
 <body>
-    <header class="bg-white flex flex-col items-center justify-center">
+    <header class="bg-white flex flex-col items-center justify-center z-[100]">
         <section class="bg-[#212121] flex text-white justify-between items-center ps-5 w-[100%] h-[42px] py-[10px]">
             <div class="flex">
                 <p class="me-2 text-[12px]"><a href="">فروشگاه</a></p>
@@ -37,7 +33,8 @@
                 </a>
             </div>
         </section>
-        <section id="header2" class="flex fixed top-[42px] w-[100%] bg-white justify-center items-center h-[80px]">
+        <section id="header2"
+            class="flex fixed top-[42px] w-[100%] bg-white justify-center items-center h-[80px] z-[100]">
             <div id="logo" class="relative -top-[20px]">
                 <h1 class="fixed right-[30px] text-[#121416] text-[25px]">صفاهان باتری</h1>
                 <img src="../images/logo.png" class="fixed right-[200px]" width="60px" alt="logo">
@@ -73,7 +70,7 @@
                         </a>
                     </div>
                     <div class="w-[25%] h-[350px] px-5">
-                        <a href="">
+                        <a href="vista/index.html">
                             <div class="rounded-2 border-[2px] border-[black] p-5 h-[100%] w-[100%]">
                                 <img src="../images/Vista.png" class="mt-[55px]" alt="">
                                 <p></p>
@@ -102,27 +99,57 @@
                 <h2 class="text-[25px] mb-[20px]">محصولات <span class="font-bold">پر فروش</span></h2>
                 <hr class="border-[1.5px] border-[#b6b5b5]">
             </section>
-            <section id="image-carousel" class="splide" data-splide='{"type":"loop","perPage":3}'
-                aria-label="Beautiful Images">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <img src="../images/ARMO.png" alt="">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="../images/DEVON.png" alt="">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="../images/vaya.png" alt="">
-                        </li>
-                    </ul>
+            <section class="flex flex-col w-[80%]">
+                <h2 class="text-[25px] mb-[20px]">مقالات</h2>
+                <hr class="border-[1.5px] border-[#b6b5b5] mb-[20px]">
+                <div class="carousel" data-flickity='{ "wrapAround": true,"pageDots": false }'>
+                    <div class="carousel-cell mx-4 p-[60px] flex justify-center w-[30%]"><img src="../images/ARMO.png"
+                            alt="">
+                    </div>
+                    <div class="carousel-cell mx-4 p-[60px] flex justify-center w-[30%]"><img src="../images/ARMO.png"
+                            alt="">
+                    </div>
+                    <div class="carousel-cell mx-4 p-[60px] flex justify-center w-[30%]"><img src="../images/ARMO.png"
+                            alt="">
+                    </div>
+                    <div class="carousel-cell mx-4 p-[60px] flex justify-center w-[30%]"><img src="../images/ARMO.png"
+                            alt="">
+                    </div>
+                    <div class="carousel-cell mx-4 p-[60px] flex justify-center w-[30%]"><img src="../images/ARMO.png"
+                            alt="">
+                    </div>
+                </div>
+                <div class="flex flex-row-reverse w-[100%] h-[60px] mt-[35px]">
+                    <div
+                        class="flex items-center justify-center w-[25%] border-2 border-s-0 border-[#e5e5e5] hover:bg-[#f7f7f7] transition-all">
+                        <p>ارسال رایگان</p>
+                    </div>
+                    <div
+                        class="flex items-center justify-center w-[25%] border-2 border-s-0 border-[#e5e5e5] hover:bg-[#f7f7f7] transition-all">
+                        <p>پشتیبانی</p>
+                    </div>
+                    <div
+                        class="flex items-center justify-center w-[25%] border-2 border-[#e5e5e5] hover:bg-[#f7f7f7] transition-all">
+                        <p>گارانتی</p>
+                    </div>
+                    <div
+                        class="flex items-center justify-center w-[25%] border-2 border-e-0 border-[#e5e5e5] hover:bg-[#f7f7f7] transition-all">
+                        <p>پرداخت امن</p>
+                    </div>
                 </div>
             </section>
         </div>
-
     </main>
-    <footer>
-
+    <footer class="flex justify-center">
+        <section class="flex flex-col items-center w-[80%] ps-5 py-5">
+            <h3 class="text-[35px]">درباره ما</h3>
+            <p class="w-[40%] text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fuga ratione
+                aspernatur
+                laboriosam
+                voluptatibus vero ullam natus quasi reprehenderit sed officiis quibusdam alias dolore, obcaecati
+                repellat velit iste odit maxime quia? Dolores in numquam ad iste, vel enim, neque expedita officia vitae
+                similique nulla temporibus omnis, id maxime non amet?</p>
+        </section>
     </footer>
 
 </body>
