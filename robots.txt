@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /en/
+Disallow: /fa/saba/
+Disallow: /fa/vista/
+Disallow: /images/
