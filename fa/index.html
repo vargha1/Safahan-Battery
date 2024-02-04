@@ -38,8 +38,7 @@
         </section>
         <section id="header2"
             class="flex fixed top-[42px] w-[100%] bg-white justify-center items-center h-[60px] z-[100]">
-            <div id="logo"
-                class="relative -top-[20px] md:block flex justify-center items-center w-full h-[calc(100%-38px)]">
+            <div id="logo" class="fixed flex justify-center md:justify-start items-center w-full h-[38px]">
                 <img src="../images/logo.png" width="60px" class="h-[45px]" alt="logo">
                 <h1 class="md:right-[30px] text-[#121416] md:text-[25px] text-[18px]">صفاهان باتری
                     اصفهان</h1>
@@ -63,40 +62,48 @@
         </section>
         <div class="flex flex-col w-[100%] items-center bg-white">
             <section class="flex flex-col justify-center bg-white w-[80%] mb-[200px]" id="services">
-                <h2 class="text-[25px] mb-[20px] mt-[120px]">دسته بندی ها</h2>
+                <div class="flex">
+                    <img src="../images/icons/lightning.svg" width="32px" alt="lightning">
+                    <h2 class="text-[25px] mb-[6px]">دسته بندی ها</h2>
+                </div>
                 <hr class="border-[1.5px] border-[#b6b5b5]">
-                <div class="flex w-[100%] mt-[25px]">
-                    <div class="w-[20%] h-[240px] px-5">
+                <div class="flex flex-wrap w-[100%] mt-[25px]">
+                    <div class="md:w-[20%] w-[50%] my-3 h-[240px] px-3">
                         <a href="saba/index.html">
-                            <div class="rounded-2 border-[2px] border-[black] p-5 ps-2 h-[100%] w-[100%]">
+                            <div
+                                class="rounded-2 border-[2px] border-[#E5E5E5] hover:border-[#ED1D24] transition-all rounded-[8px] p-5 ps-2 h-[100%] w-[100%]">
                                 <img src="../images/saba.png" alt="saba-logo">
                             </div>
                         </a>
                     </div>
-                    <div class="w-[20%] h-[240px] px-5">
+                    <div class="md:w-[20%] w-[50%] my-3 h-[240px] px-3">
                         <a href="vista/index.html">
-                            <div class="rounded-2 border-[2px] border-[black] p-5 h-[100%] w-[100%]">
+                            <div
+                                class="rounded-2 border-[2px] border-[#E5E5E5] hover:border-[#ED1D24] transition-all rounded-[8px] p-5 h-[100%] w-[100%]">
                                 <img src="../images/Vista.png" class="mt-[55px]" alt="vista-logo">
                             </div>
                         </a>
                     </div>
-                    <div class="w-[20%] h-[240px] px-5">
+                    <div class="md:w-[20%] w-[50%] my-3 h-[240px] px-3">
                         <a href="pasargad/index.html">
-                            <div class="rounded-2 border-[2px] border-[black] p-5 h-[100%] w-[100%]">
+                            <div
+                                class="rounded-2 border-[2px] border-[#E5E5E5] hover:border-[#ED1D24] transition-all rounded-[8px] p-5 h-[100%] w-[100%]">
                                 <img src="../images/pasargad.png" alt="pasargad-logo">
                             </div>
                         </a>
                     </div>
-                    <div class="w-[20%] h-[240px] px-5">
+                    <div class="md:w-[20%] w-[50%] my-3 h-[240px] px-3">
                         <a href="vaya/index.html">
-                            <div class="rounded-2 border-[2px] border-[black] p-5 h-[100%] w-[100%]">
+                            <div
+                                class="rounded-2 border-[2px] border-[#E5E5E5] hover:border-[#ED1D24] transition-all rounded-[8px] p-5 h-[100%] w-[100%]">
                                 <img src="../images/vaya.png" class="mt-[25px]" alt="vaya-logo">
                             </div>
                         </a>
                     </div>
-                    <div class="w-[20%] h-[240px] px-5">
+                    <div class="md:w-[20%] w-[50%] my-3 h-[240px] px-3">
                         <a href="borna/index.html">
-                            <div class="rounded-2 border-[2px] border-[black] p-5 h-[100%] w-[100%]">
+                            <div
+                                class="rounded-2 border-[2px] border-[#E5E5E5] hover:border-[#ED1D24] transition-all rounded-[8px] p-5 h-[100%] w-[100%]">
                                 <img src="../images/borna.png" class="mt-[25px]" alt="borna-logo">
                             </div>
                         </a>
@@ -104,11 +111,17 @@
                 </div>
             </section>
             <section class="flex flex-col w-[80%] mb-[200px]">
-                <h2 class="text-[25px] mb-[20px]">محصولات <span class="font-bold">پر فروش</span></h2>
+                <div class="flex">
+                    <img src="../images/icons/lightning.svg" width="32px" alt="lightning">
+                    <h2 class="text-[25px] mb-[6px]">محصولات <span class="font-bold">پر فروش</span></h2>
+                </div>
                 <hr class="border-[1.5px] border-[#b6b5b5]">
             </section>
             <section class="flex flex-col w-[80%]">
-                <h2 class="text-[25px] mb-[20px]">مقالات</h2>
+                <div class="flex">
+                    <img src="../images/icons/lightning.svg" width="32px" alt="lightning">
+                    <h2 class="text-[25px] mb-[6px]">مقالات</h2>
+                </div>
                 <hr class="border-[1.5px] border-[#b6b5b5] mb-[20px]">
                 <div class="carousel" data-flickity='{ "wrapAround": true,"pageDots": false }'>
                     <div class="carousel-cell mx-4 p-[60px] flex justify-center w-[30%]"><img src="../images/ARMO.png"
@@ -129,19 +142,19 @@
                 </div>
                 <div class="flex flex-row-reverse w-[100%] h-[60px] my-[35px]">
                     <div
-                        class="flex items-center justify-center w-[25%] border-2 border-s-0 border-[#e5e5e5] hover:bg-[#f7f7f7] transition-all">
+                        class="flex items-center justify-center w-[25%] after:w-[1px] after:h-[40px] after:absolute after:right-0 after:bg-[#E5E5E5] relative border-[1px] border-s-0 border-[#e5e5e5] hover:bg-[#f7f7f7] transition-all">
                         <p>ارسال رایگان</p>
                     </div>
                     <div
-                        class="flex items-center justify-center w-[25%] border-2 border-s-0 border-[#e5e5e5] hover:bg-[#f7f7f7] transition-all">
+                        class="flex items-center justify-center w-[25%] after:w-[1px] after:h-[40px] after:absolute after:right-0 after:bg-[#E5E5E5] relative border-[1px] border-x-0 border-[#e5e5e5] hover:bg-[#f7f7f7] transition-all">
                         <p>پشتیبانی</p>
                     </div>
                     <div
-                        class="flex items-center justify-center w-[25%] border-2 border-[#e5e5e5] hover:bg-[#f7f7f7] transition-all">
+                        class="flex items-center justify-center w-[25%] after:w-[1px] after:h-[40px] after:absolute after:right-0 after:bg-[#E5E5E5] relative border-[1px] border-x-0 border-[#e5e5e5] hover:bg-[#f7f7f7] transition-all">
                         <p>گارانتی</p>
                     </div>
                     <div
-                        class="flex items-center justify-center w-[25%] border-2 border-e-0 border-[#e5e5e5] hover:bg-[#f7f7f7] transition-all">
+                        class="flex items-center justify-center w-[25%] after:h-[40px] after:absolute after:right-0 relative border-[1px] border-e-0 border-[#e5e5e5] hover:bg-[#f7f7f7] transition-all">
                         <p>پرداخت امن</p>
                     </div>
                 </div>
