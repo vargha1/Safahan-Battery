@@ -8,3 +8,5 @@ window.addEventListener('scroll', (event) => {
         document.getElementById("header2").classList.add("fixed");
     }
 });
+
+let offCanvas = document.getElementById("offcanvas-header");
