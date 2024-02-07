@@ -8,5 +8,24 @@ window.addEventListener('scroll', (event) => {
         document.getElementById("header2").classList.add("fixed");
     }
 });
+window.addEventListener('DOMContentLoaded', () => {
+    function preventScroll(e) {
+        e.preventDefault();
+        e.stopPropagation();
 
-let offCanvas = document.getElementById("offcanvas-header");
+        return false;
+    }
+    let offCanvasH = document.getElementById("offcanvasheader");
+    let offCanvas = document.getElementById("offcanvas");
+    let cover = document.getElementById('cover')
+    offCanvasH.addEventListener('click', () => {
+        offCanvas.classList.remove("-left-[150%]");
+        cover.classList.remove('hidden');
+        document.addEventListener('wheel', preventScroll, { passive: false });
+    });
+    cover.addEventListener('click', () => {
+        offCanvas.classList.add('-left-[150%]');
+        cover.classList.add('hidden');
+        document.removeEventListener('wheel', preventScroll, { passive: false });
+    });
+});
