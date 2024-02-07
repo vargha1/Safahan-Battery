@@ -14,10 +14,10 @@
 </head>
 
 <body>
-    <header class="bg-white flex flex-col items-center justify-center">
+    <header class="bg-white flex flex-col items-center justify-center z-[100]">
         <section class="bg-[#212121] flex text-white justify-between items-center ps-5 w-[100%] h-[42px] py-[10px]">
             <div class="flex">
-                <p class="me-2 text-[12px]">فروشگاه</p>
+                <p class="me-2 text-[12px]"><a href="">فروشگاه</a></p>
                 <span>|</span>
                 <p class="mx-2 text-[12px]"><a href="">درباره ما</a></p>
                 <span>|</span>
@@ -33,14 +33,21 @@
                 </a>
             </div>
         </section>
-        <section id="header2" class="flex fixed top-[42px] w-[100%] bg-white justify-center items-center h-[80px]">
-            <div id="logo" class="relative -top-[20px]">
-                <h1 class="fixed right-[30px] text-[#121416] text-[25px]">صفاهان باتری اصفهان</h1>
-                <img src="../../images/logo.png" class="fixed right-[280px]" width="60px" alt="logo">
+        <section id="header2"
+            class="flex fixed top-[42px] w-[100%] bg-white justify-center items-center h-[60px] z-[18]">
+            <div class="w-[32px] lg:hidden absolute left-[15px] hover:text-[#ed1d24] z-[5]" id="offcanvasheader">
+                <svg xmlns="http://www.w3.org/2000/svg" class="hover:text-[#ed1d24]" viewBox="0 0 512 512">
+                    <path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10"
+                        stroke-width="32" d="M80 160h352M80 256h352M80 352h352"></path>
+                </svg>
             </div>
-            <nav class="flex justify-center px-2 mx-5 text-[#121416] relative">
-                <a href="../index.html"
-                    class="bg-[inherit] rounded-full border-2 border-[#ED1D24] mx-2 px-4 navlink">خانه</a>
+            <div id="logo" class="fixed right-[15px] flex justify-center lg:justify-start items-center w-full h-[38px]">
+                <img src="../../images/logo.png" width="60px" class="h-[45px]" alt="logo">
+                <h1 class="md:right-[30px] text-[#121416] md:text-[25px] text-[18px]">صفاهان باتری
+                    اصفهان</h1>
+            </div>
+            <nav class="hidden lg:flex justify-center px-2 mx-5 text-[#121416] relative">
+                <a href="" class="bg-[inherit] rounded-full border-2 border-[#ED1D24] mx-2 px-4 navlink">خانه</a>
                 <a href="" class="bg-[inherit] rounded-full border-2 border-[white] mx-2 px-4 navlink">محصولات</a>
                 <a href="" class="bg-[inherit] rounded-full border-2 border-[white] mx-2 px-4 navlink">درباره
                     ما</a>
@@ -50,6 +57,9 @@
         </section>
     </header>
     <main class="mt-[150px] flex flex-col justify-center items-center bg-[white]">
+        <div id="cover" class="fixed top-0 bottom-0 left-0 right-0 bg-[black] opacity-40 hidden"></div>
+        <div class="top-0 bottom-0 -left-[150%] -left-0 max-w-[300px] w-full fixed bg-white transition-all duration-500 z-[20]"
+            id="offcanvas"></div>
         <h2 class="font-bold text-[40px]">پاسارگاد صنعت(لیدر)</h2>
         <p class="text-[18px]">پاسارگاد صنعت / خانه</p>
         <div class="w-[80%]">
@@ -69,21 +79,25 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-row-reverse w-[80%] h-[60px] my-[35px]">
+        <div class="flex lg:flex-row-reverse flex-col w-[100%] lg:h-[60px] my-[35px] border-[1px] lg:border-0">
             <div
-                class="flex items-center justify-center w-[25%] border-2 border-s-0 border-[#e5e5e5] hover:bg-[#f7f7f7] transition-all">
+                class="flex items-center justify-center lg:w-[25%] py-4 w-full lg:after:w-[1px] lg:after:h-[40px] lg:after:absolute lg:after:right-0 lg:after:bg-[#E5E5E5] relative lg:border-[1px] border-s-0 border-[#e5e5e5] lg:hover:bg-[#f7f7f7] transition-all">
+                <img src="../../images/icons/shipping1.webp" class="me-3" alt="free-shipping">
                 <p>ارسال رایگان</p>
             </div>
             <div
-                class="flex items-center justify-center w-[25%] border-2 border-s-0 border-[#e5e5e5] hover:bg-[#f7f7f7] transition-all">
+                class="flex items-center justify-center lg:w-[25%] py-4 w-full lg:after:w-[1px] lg:after:h-[40px] lg:after:absolute lg:after:right-0 lg:after:bg-[#E5E5E5] relative lg:border-[1px] border-x-0 border-[#e5e5e5] lg:hover:bg-[#f7f7f7] transition-all">
+                <img src="../../images/icons/shipping2.webp" class="me-3" alt="support">
                 <p>پشتیبانی</p>
             </div>
             <div
-                class="flex items-center justify-center w-[25%] border-2 border-[#e5e5e5] hover:bg-[#f7f7f7] transition-all">
+                class="flex items-center justify-center lg:w-[25%] py-4 w-full lg:after:w-[1px] lg:after:h-[40px] lg:after:absolute lg:after:right-0 lg:after:bg-[#E5E5E5] relative lg:border-[1px] border-x-0 border-[#e5e5e5] lg:hover:bg-[#f7f7f7] transition-all">
+                <img src="../../images/icons/shipping3.webp" class="me-3" alt="guaranteed">
                 <p>گارانتی</p>
             </div>
             <div
-                class="flex items-center justify-center w-[25%] border-2 border-e-0 border-[#e5e5e5] hover:bg-[#f7f7f7] transition-all">
+                class="flex items-center justify-center lg:w-[25%] py-4 w-full lg:after:h-[40px] lg:after:absolute lg:after:right-0 relative lg:border-[1px] border-e-0 border-[#e5e5e5] lg:hover:bg-[#f7f7f7] transition-all">
+                <img src="../../images/icons/shipping4.webp" class="me-3" alt="secure-payment">
                 <p>پرداخت امن</p>
             </div>
         </div>
@@ -91,7 +105,8 @@
     <footer class="flex justify-center">
         <section class="flex flex-col items-center w-[80%] ps-5 py-5">
             <h3 class="text-[35px]">درباره ما</h3>
-            <p class="w-[40%] text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fuga ratione
+            <p class="lg:w-[40%] w-full text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                fuga ratione
                 aspernatur
                 laboriosam
                 voluptatibus vero ullam natus quasi reprehenderit sed officiis quibusdam alias dolore, obcaecati
