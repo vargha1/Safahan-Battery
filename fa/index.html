@@ -38,7 +38,7 @@
         </section>
         <section id="header2"
             class="flex fixed top-[42px] w-[100%] bg-white justify-center items-center h-[60px] z-[18]">
-            <div class="w-[32px] lg:hidden absolute left-[15px] hover:text-[#ed1d24] z-[5]" id="offcanvasheader">
+            <div class="w-[32px] lg:hidden absolute right-[15px] hover:text-[#ed1d24] z-[5]" id="offcanvasheader">
                 <svg xmlns="http://www.w3.org/2000/svg" class="hover:text-[#ed1d24]" viewBox="0 0 512 512">
                     <path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10"
                         stroke-width="32" d="M80 160h352M80 256h352M80 352h352"></path>
@@ -62,8 +62,21 @@
     </header>
     <main class="flex flex-col items-center justify-center">
         <div id="cover" class="fixed top-0 bottom-0 left-0 right-0 bg-[black] opacity-40 hidden"></div>
-        <div class="top-0 bottom-0 -left-[150%] -left-0 max-w-[300px] w-full fixed bg-white transition-all duration-500 z-[20]"
-            id="offcanvas"></div>
+        <div class="top-0 bottom-0 -right-[150%] -right-0 max-w-[300px] w-full fixed bg-white transition-all duration-500 z-[20]"
+            id="offcanvas">
+            <div class="flex">
+                <img src="../images/logo.png" width="60px" height="45px" alt="logo">
+                <h1 class="md:text-[25px] text-[18px]">صفاهان باتری اصفهان</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="w-full h-[45px]"><a class="h-full w-full flex items-center" href="">خانه</a></li>
+                    <li class="w-full h-[45px]"><a class="h-full w-full flex items-center" href="">محصولات</a></li>
+                    <li class="w-full h-[45px]"><a class="h-full w-full flex items-center" href="">درباره ما</a></li>
+                    <li class="w-full h-[45px]"><a class="h-full w-full flex items-center" href="">تماس با ما</a></li>
+                </ul>
+            </nav>
+        </div>
         <section class="flex justify-center w-[85%] mt-[100px]">
             <h2 class="text[#121416] text-[35px] mb-[60px] mt-[20px] font-bold">
                 فروش انواع
@@ -106,7 +119,7 @@
                         <a href="vaya/index.html">
                             <div
                                 class="rounded-2 flex justify-center border-[2px] border-[#E5E5E5] hover:border-[#ED1D24] transition-all rounded-[8px] p-5 h-[145px] my-3 w-[100%]">
-                                <img src="../images/vaya.png" class="mt-[15px] w-[135px]" alt="vaya-logo">
+                                <img src="../images/vaya.png" class="w-[135px]" alt="vaya-logo">
                             </div>
                         </a>
                     </div>
@@ -137,52 +150,52 @@
                 <div class="carousel" data-flickity='{ "wrapAround": true,"pageDots": false }'>
                     <div class="carousel-cell mx-4 p-[60px] flex justify-center w-full lg:w-[30%]"><img
                             src="../images/ARMO.png" alt="armo-battery-1" class="top-0 absolute h-[40%]">
-                        <div class="flex">
-                            <h3 class="absolute right-[20px] bottom-[140px]">عنوان</h3>
-                            <p class="absolute right-[20px] bottom-[20px]">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Perferendis, quod qui dignissimos eligendi soluta maxime libero optio
-                                dolor, amet iste blanditiis distinctio. Atque temporibus quasi voluptas recusandae
-                                voluptatum, eius ducimus!</p>
+                        <div class="flex flex-col absolute right-[20px] bottom-[20px]">
+                            <h3>عنوان</h3>
+                            <p class="text-center">Lorem, ipsum dolor sit amet
+                                consectetur
+                                adipisicing elit. Aspernatur eius placeat veniam ab? Error consequatur praesentium,
+                                veniam pariatur alias quis necessitatibus voluptate fugiat veritatis voluptates!</p>
                         </div>
                     </div>
                     <div class="carousel-cell mx-4 p-[60px] flex justify-center w-full lg:w-[30%]"><img
                             src="../images/ARMO.png" alt="armo-battery-2" class="top-0 absolute h-[40%]">
-                        <div class="flex">
-                            <h3 class="absolute right-[20px] bottom-[140px]">عنوان</h3>
-                            <p class="absolute right-[20px] bottom-[20px]">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Perferendis, quod qui dignissimos eligendi soluta maxime libero optio
-                                dolor, amet iste blanditiis distinctio. Atque temporibus quasi voluptas recusandae
-                                voluptatum, eius ducimus!</p>
+                        <div class="flex flex-col absolute right-[20px] bottom-[20px]">
+                            <h3>عنوان</h3>
+                            <p class="text-center">Lorem, ipsum dolor sit amet
+                                consectetur
+                                adipisicing elit. Aspernatur eius placeat veniam ab? Error consequatur praesentium,
+                                veniam pariatur alias quis necessitatibus voluptate fugiat veritatis voluptates!</p>
                         </div>
                     </div>
                     <div class="carousel-cell mx-4 p-[60px] flex justify-center w-full lg:w-[30%]"><img
                             src="../images/ARMO.png" alt="armo-battery-3" class="top-0 absolute h-[40%]">
-                        <div class="flex">
-                            <h3 class="absolute right-[20px] bottom-[140px]">عنوان</h3>
-                            <p class="absolute right-[20px] bottom-[20px]">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Perferendis, quod qui dignissimos eligendi soluta maxime libero optio
-                                dolor, amet iste blanditiis distinctio. Atque temporibus quasi voluptas recusandae
-                                voluptatum, eius ducimus!</p>
+                        <div class="flex flex-col absolute right-[20px] bottom-[20px]">
+                            <h3>عنوان</h3>
+                            <p class="text-center">Lorem, ipsum dolor sit amet
+                                consectetur
+                                adipisicing elit. Aspernatur eius placeat veniam ab? Error consequatur praesentium,
+                                veniam pariatur alias quis necessitatibus voluptate fugiat veritatis voluptates!</p>
                         </div>
                     </div>
                     <div class="carousel-cell mx-4 p-[60px] flex justify-center w-full lg:w-[30%]"><img
                             src="../images/ARMO.png" alt="armo-battery-4" class="top-0 absolute h-[40%]">
-                        <div class="flex">
-                            <h3 class="absolute right-[20px] bottom-[140px]">عنوان</h3>
-                            <p class="absolute right-[20px] bottom-[20px]">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Perferendis, quod qui dignissimos eligendi soluta maxime libero optio
-                                dolor, amet iste blanditiis distinctio. Atque temporibus quasi voluptas recusandae
-                                voluptatum, eius ducimus!</p>
+                        <div class="flex flex-col absolute right-[20px] bottom-[20px]">
+                            <h3>عنوان</h3>
+                            <p class="text-center">Lorem, ipsum dolor sit amet
+                                consectetur
+                                adipisicing elit. Aspernatur eius placeat veniam ab? Error consequatur praesentium,
+                                veniam pariatur alias quis necessitatibus voluptate fugiat veritatis voluptates!</p>
                         </div>
                     </div>
                     <div class="carousel-cell mx-4 p-[60px] flex justify-center w-full lg:w-[30%]"><img
                             src="../images/ARMO.png" alt="armo-battery-5" class="top-0 absolute h-[40%]">
-                        <div class="flex">
-                            <h3 class="absolute right-[20px] bottom-[140px]">عنوان</h3>
-                            <p class="absolute right-[20px] bottom-[20px]">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Perferendis, quod qui dignissimos eligendi soluta maxime libero optio
-                                dolor, amet iste blanditiis distinctio. Atque temporibus quasi voluptas recusandae
-                                voluptatum, eius ducimus!</p>
+                        <div class="flex flex-col absolute right-[20px] bottom-[20px]">
+                            <h3>عنوان</h3>
+                            <p class="text-center">Lorem, ipsum dolor sit amet
+                                consectetur
+                                adipisicing elit. Aspernatur eius placeat veniam ab? Error consequatur praesentium,
+                                veniam pariatur alias quis necessitatibus voluptate fugiat veritatis voluptates!</p>
                         </div>
                     </div>
                 </div>
