@@ -34,14 +34,15 @@
             </div>
         </section>
         <section id="header2"
-            class="flex fixed top-[42px] w-[100%] bg-white justify-center items-center h-[60px] z-[18]">
-            <div class="w-[32px] lg:hidden absolute left-[15px] hover:text-[#ed1d24] z-[5]" id="offcanvasheader">
+            class="flex fixed top-[1px] top-[42px] w-[100%] shadow-md bg-white justify-center items-center h-[60px] z-[18]">
+            <div class="w-[32px] lg:hidden absolute right-[15px] hover:text-[#ed1d24] z-[5]" id="offcanvasheader">
                 <svg xmlns="http://www.w3.org/2000/svg" class="hover:text-[#ed1d24]" viewBox="0 0 512 512">
                     <path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10"
                         stroke-width="32" d="M80 160h352M80 256h352M80 352h352"></path>
                 </svg>
             </div>
-            <div id="logo" class="fixed right-[15px] flex justify-center lg:justify-start items-center w-full h-[38px]">
+            <div id="logo"
+                class="fixed lg:right-[15px] flex justify-center lg:justify-start items-center w-full h-[38px]">
                 <img src="../../images/logo.png" width="60px" class="h-[45px]" alt="logo">
                 <h1 class="md:right-[30px] text-[#121416] md:text-[25px] text-[18px]">صفاهان باتری
                     اصفهان</h1>
@@ -57,53 +58,86 @@
         </section>
     </header>
     <main class="mt-[150px] flex flex-col justify-center items-center bg-[white]">
-        <div id="cover" class="fixed top-0 bottom-0 left-0 right-0 bg-[black] opacity-40 hidden"></div>
-        <div class="top-0 bottom-0 -left-[150%] -left-0 max-w-[300px] w-full fixed bg-white transition-all duration-500 z-[20]"
-            id="offcanvas"></div>
-        <h2 class="font-bold text-[40px]">برنا(گلدن)</h2>
-        <p class="text-[18px]">برنا <span class="text-[#ED1D24]">/</span> خانه</p>
+        <div id="cover" class="fixed top-0 bottom-0 left-0 right-0 bg-[black] z-[20] opacity-40 hidden"></div>
+        <div class="top-0 bottom-0 -right-[150%] -right-0 max-w-[300px] w-full fixed bg-white transition-all duration-500 z-[20]"
+            id="offcanvas">
+            <div class="flex">
+                <img src="../../images/logo.png" width="60px" height="45px" alt="logo">
+                <h1 class="md:text-[25px] text-[18px]">صفاهان باتری اصفهان</h1>
+            </div>
+            <nav>
+                <ul class="flex flex-col items-center">
+                    <li class="w-[80%] h-[45px]"><a
+                            class="h-full w-full flex items-center ps-4 border-2 border-[transparent] rounded-[2px] hover:border-[#ed1d24]"
+                            href="">خانه</a></li>
+                    <li class="w-[80%] h-[45px]"><a
+                            class="h-full w-full flex items-center ps-4 border-2 border-[transparent] rounded-[2px] hover:border-[#ed1d24]"
+                            href="">محصولات</a></li>
+                    <li class="w-[80%] h-[45px]"><a
+                            class="h-full w-full flex items-center ps-4 border-2 border-[transparent] rounded-[2px] hover:border-[#ed1d24]"
+                            href="">درباره ما</a></li>
+                    <li class="w-[80%] h-[45px]"><a
+                            class="h-full w-full flex items-center ps-4 border-2 border-[transparent] rounded-[2px] hover:border-[#ed1d24]"
+                            href="">تماس با ما</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h2 class="font-bold text-[40px]">وایا(دوون)</h2>
+        <p class="text-[18px]">وایا <span class="text-[#ED1D24]">/</span> خانه</p>
         <div class="w-[80%]">
             <hr class="border-[black] mt-5">
-            <div class="flex mt-[45px]">
-                <div class="w-[33%]">
-                    <div class="rounded-2 h-[100%] p-[60px] hover:bg-[transparent] w-[100%]">
-                        <img src="../../images/golden1.png" bg-[transparent] alt="">
+            <div class="flex flex-wrap mt-[45px]">
+                <div class="lg:w-[20%] w-[50%]">
+                    <div class="rounded-2 h-[100%] p-[40px] w-[100%]">
+                        <img src="../../images/DEVON.png" class="md:max-w-[170px] lg:max-w-[100%]" alt="">
                         <p></p>
                     </div>
                 </div>
-                <div class="w-[33%]">
-                    <div class="rounded-2 h-[100%] p-[60px] hover:bg-[transparent] w-[100%]">
-                        <img src="../../images/golden2.png" bg-[transparent] alt="">
+                <div class="lg:w-[20%] w-[50%]">
+                    <div class="rounded-2 h-[100%] p-[40px] w-[100%]">
+                        <img src="../../images/devon2.png" alt="">
                         <p></p>
                     </div>
                 </div>
-                <div class="w-[33%]">
-                    <div class="rounded-2 h-[100%] p-[60px] hover:bg-[transparent] w-[100%]">
-                        <img src="../../images/golden3.png" bg-[transparent] alt="">
+                <div class="lg:w-[20%] w-[50%]">
+                    <div class="rounded-2 h-[100%] p-[40px] w-[100%]">
+                        <img src="../../images/devon3.png" alt="">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="lg:w-[20%] w-[50%]">
+                    <div class="rounded-2 h-[100%] p-[40px] w-[100%]">
+                        <img src="../../images/devon4.png" alt="">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="lg:w-[20%] w-[50%]">
+                    <div class="rounded-2 h-[100%] p-[40px] w-[100%]">
+                        <img src="../../images/devon5.png" alt="">
                         <p></p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="flex lg:flex-row-reverse flex-col w-[100%] lg:h-[60px] my-[35px] border-[1px] lg:border-0">
+        <div class="flex flex-wrap lg:flex-row-reverse w-[100%] lg:h-[60px] my-[35px] border-[1px] lg:border-0">
             <div
-                class="flex items-center justify-center lg:w-[25%] py-4 w-full lg:after:w-[1px] lg:after:h-[40px] lg:after:absolute lg:after:right-0 lg:after:bg-[#E5E5E5] relative lg:border-[1px] border-s-0 border-[#e5e5e5] lg:hover:bg-[#f7f7f7] transition-all">
-                <img src="../../images/icons/shipping1.webp" class="me-3" alt="free-shipping">
+                class="flex items-center justify-center lg:w-[25%] py-4 w-[50%] lg:after:w-[1px] lg:after:h-[40px] lg:after:absolute lg:after:right-0 lg:after:bg-[#E5E5E5] relative border-[1px] lg:border-s-0 border-[#e5e5e5] lg:hover:bg-[#f7f7f7] transition-all">
+                <img src="../../images/icons/shipping1.webp" class="me-3 w-[32px]" alt="free-shipping">
                 <p>ارسال رایگان</p>
             </div>
             <div
-                class="flex items-center justify-center lg:w-[25%] py-4 w-full lg:after:w-[1px] lg:after:h-[40px] lg:after:absolute lg:after:right-0 lg:after:bg-[#E5E5E5] relative lg:border-[1px] border-x-0 border-[#e5e5e5] lg:hover:bg-[#f7f7f7] transition-all">
-                <img src="../../images/icons/shipping2.webp" class="me-3" alt="support">
+                class="flex items-center justify-center lg:w-[25%] py-4 w-[50%] lg:after:w-[1px] lg:after:h-[40px] lg:after:absolute lg:after:right-0 lg:after:bg-[#E5E5E5] relative border-[1px] lg:border-x-0 border-[#e5e5e5] lg:hover:bg-[#f7f7f7] transition-all">
+                <img src="../../images/icons/shipping2.webp" class="me-3 w-[32px]" alt="support">
                 <p>پشتیبانی</p>
             </div>
             <div
-                class="flex items-center justify-center lg:w-[25%] py-4 w-full lg:after:w-[1px] lg:after:h-[40px] lg:after:absolute lg:after:right-0 lg:after:bg-[#E5E5E5] relative lg:border-[1px] border-x-0 border-[#e5e5e5] lg:hover:bg-[#f7f7f7] transition-all">
-                <img src="../../images/icons/shipping3.webp" class="me-3" alt="guaranteed">
+                class="flex items-center justify-center lg:w-[25%] py-4 w-[50%] lg:after:w-[1px] lg:after:h-[40px] lg:after:absolute lg:after:right-0 lg:after:bg-[#E5E5E5] relative border-[1px] lg:border-x-0 border-[#e5e5e5] lg:hover:bg-[#f7f7f7] transition-all">
+                <img src="../../images/icons/shipping3.webp" class="me-3 w-[28px]" alt="guaranteed">
                 <p>گارانتی</p>
             </div>
             <div
-                class="flex items-center justify-center lg:w-[25%] py-4 w-full lg:after:h-[40px] lg:after:absolute lg:after:right-0 relative lg:border-[1px] border-e-0 border-[#e5e5e5] lg:hover:bg-[#f7f7f7] transition-all">
-                <img src="../../images/icons/shipping4.webp" class="me-3" alt="secure-payment">
+                class="flex items-center justify-center lg:w-[25%] py-4 w-[50%] lg:after:h-[40px] lg:after:absolute lg:after:right-0 relative border-[1px] lg:border-e-0 border-[#e5e5e5] lg:hover:bg-[#f7f7f7] transition-all">
+                <img src="../../images/icons/shipping4.webp" class="me-3 w-[20px]" alt="secure-payment">
                 <p>پرداخت امن</p>
             </div>
         </div>
