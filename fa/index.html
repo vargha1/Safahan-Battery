@@ -74,8 +74,8 @@
                             class="h-full w-full flex items-center ps-4 border-2 border-[transparent] rounded-[2px] hover:border-[#ed1d24]"
                             href="">خانه</a></li>
                     <li class="w-[80%] h-[45px]"><a
-                            class="h-full w-full flex items-center ps-4 border-2 border-[transparent] rounded-[2px] cursor-pointer hover:border-[#ed1d24]"
-                            id="p-link">محصولات</a></li>
+                            class="h-full w-full flex items-center ps-4 border-2 border-[transparent] rounded-[2px] cursor-pointer hover:border-[#ed1d24] p-link">محصولات</a>
+                    </li>
                     <li class="w-[80%] h-[45px]"><a
                             class="h-full w-full flex items-center ps-4 border-2 border-[transparent] rounded-[2px] hover:border-[#ed1d24]"
                             href="">درباره ما</a></li>
@@ -142,8 +142,8 @@
                     </div>
                 </div>
             </section>
-            <section class="flex flex-col w-[80%]">
-                <div class="flex" id="products">
+            <section class="flex flex-col w-[80%]" id="products">
+                <div class="flex">
                     <img src="../images/icons/lightning.svg" width="32px" alt="lightning">
                     <h2 class="text-[25px] mb-[6px]">محصولات <span class="font-bold">پر فروش</span></h2>
                 </div>
@@ -261,15 +261,36 @@
         </div>
     </main>
     <footer class="flex justify-center">
-        <section class="flex flex-col items-center w-[80%] ps-5 py-5">
-            <h3 class="text-[35px]">درباره ما</h3>
-            <p class="lg:w-[40%] w-full text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                fuga ratione
-                aspernatur
-                laboriosam
-                voluptatibus vero ullam natus quasi reprehenderit sed officiis quibusdam alias dolore, obcaecati
-                repellat velit iste odit maxime quia? Dolores in numquam ad iste, vel enim, neque expedita officia vitae
-                similique nulla temporibus omnis, id maxime non amet?</p>
+        <section class="flex w-[80%] ps-5 py-5">
+            <div class="flex flex-col lg:w-[25%] px-[20px]">
+                <h3 class="text-[20px]">درباره ما</h3>
+                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                    fuga ratione
+                    aspernatur
+                    laboriosam
+                    voluptatibus vero ullam natus quasi reprehenderit sed officiis quibusdam alias dolore, obcaecati
+                    repellat velit iste odit maxime quia? Dolores in numquam ad iste, vel enim, neque expedita officia
+                    vitae
+                    similique nulla temporibus omnis, id maxime non amet?</p>
+            </div>
+            <div class="flex flex-col w-[25%] px-[20px]">
+                <h3 class="text-[20px] font-bold  mb-[30px]">لینک های مفید</h3>
+                <a href="" class="mb-[15px]">خانه</a>
+                <a href="" class="mb-[15px]">محصولات</a>
+                <a href="contact.html" class="mb-[15px]">تماس با ما</a>
+            </div>
+            <div class="flex flex-col w-[25%] px-[20px]">
+                <h3 class="text-[20px] font-bold mb-[30px]">لینک های مفید</h3>
+                <a href="" class="mb-[15px]">خانه</a>
+                <a href="#products" class="mb-[15px]">محصولات</a>
+                <a href="contact.html" class="mb-[15px]">تماس با ما</a>
+            </div>
+            <div class="flex flex-col w-[25%] px-[20px]">
+                <h3 class="text-[20px] font-bold mb-[30px]">لینک های مفید</h3>
+                <a href="" class="mb-[15px]">خانه</a>
+                <a class="mb-[15px] p-link">محصولات</a>
+                <a href="contact.html" class="mb-[15px]">تماس با ما</a>
+            </div>
         </section>
     </footer>
 

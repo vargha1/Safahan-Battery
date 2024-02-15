@@ -18,9 +18,11 @@ window.addEventListener('DOMContentLoaded', () => {
         cover.classList.add('hidden');
         document.removeEventListener('wheel', preventScroll, { passive: false });
     }
-    document.getElementById('p-link').addEventListener('click', () => {
-        window.scroll(0, 940);
-    });
+    for (const link of document.getElementsByClassName('p-link')) {
+        link.addEventListener('click', () => {
+            window.scroll(0, 890);
+        });
+    }
     let offCanvasH = document.getElementById("offcanvasheader");
     let offCanvas = document.getElementById("offcanvas");
     let cover = document.getElementById('cover')
@@ -32,7 +34,9 @@ window.addEventListener('DOMContentLoaded', () => {
     cover.addEventListener('click', () => {
         closeCanvas();
     });
-    document.getElementById('p-link').addEventListener('click', () => {
-        closeCanvas();
-    });
+    for (const link of document.getElementsByClassName('p-link')) {
+        link.addEventListener('click', () => {
+            closeCanvas();
+        });
+    }
 });
