@@ -6,6 +6,13 @@ window.addEventListener('scroll', (event) => {
         document.getElementById("header2").classList.add("fixed");
     }
 });
+
+for (const drawer of document.getElementsByClassName('drawer')) {
+    drawer.addEventListener('click', () => {
+        this.nextElementSibling.classList.toggle('opacity-0');
+    });
+}
+
 window.addEventListener('DOMContentLoaded', () => {
     function preventScroll(e) {
         e.preventDefault();
