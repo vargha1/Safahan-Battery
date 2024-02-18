@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>تماس با ما | صفاهان باتری</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="canonical" href="https://safahan.varghaapi.ir/fa/">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -15,7 +15,7 @@
     <header class="bg-white flex flex-col items-center justify-center z-[100]">
         <section class="bg-[#212121] flex text-white justify-between items-center ps-5 w-[100%] h-[42px] py-[10px]">
             <div class="flex">
-                <p class="me-2 text-[12px]"><a href="">فروشگاه</a></p>
+                <p class="me-2 text-[12px]"><a href="/fa/index.html">فروشگاه</a></p>
                 <span>|</span>
                 <p class="mx-2 text-[12px]"><a href="">درباره ما</a></p>
                 <span>|</span>
@@ -46,8 +46,10 @@
                     اصفهان</h1>
             </div>
             <nav class="hidden lg:flex justify-center px-2 mx-5 text-[#121416] relative">
-                <a href="" class="bg-[inherit] rounded-full border-2 border-[#ED1D24] mx-2 px-4 navlink">خانه</a>
-                <a href="" class="bg-[inherit] rounded-full border-2 border-[white] mx-2 px-4 navlink">محصولات</a>
+                <a href="/fa/index.html"
+                    class="bg-[inherit] rounded-full border-2 border-[#ED1D24] mx-2 px-4 navlink">خانه</a>
+                <a href="/fa/index.html"
+                    class="bg-[inherit] rounded-full border-2 border-[white] mx-2 px-4 navlink">محصولات</a>
                 <a href="" class="bg-[inherit] rounded-full border-2 border-[white] mx-2 px-4 navlink">درباره
                     ما</a>
                 <a href="contact.html" class="bg-[inherit] rounded-full border-2 border-[white] mx-2 px-4 navlink">تماس
@@ -56,10 +58,37 @@
         </section>
     </header>
     <main class="flex flex-col justify-center items-center">
+        <div id="cover" class="fixed top-0 bottom-0 left-0 right-0 bg-[black] z-[19] opacity-40 hidden"></div>
+        <div class="top-0 bottom-0 -right-[150%] -right-0 max-w-[300px] w-full fixed bg-white transition-all duration-500 z-[20]"
+            id="offcanvas">
+            <div class="flex relative p-3">
+                <img src="../images/logo.png" width="60px" height="45px" alt="logo">
+                <h1 class="md:text-[25px] text-[18px]">صفاهان باتری اصفهان</h1>
+                <img src="../images/icons/close.svg" width="16px" class="absolute left-[10px] top-[20px] cursor-pointer"
+                    id="close-btn" alt="close-icon">
+            </div>
+            <nav>
+                <ul class="flex flex-col items-center">
+                    <li class="w-[80%] h-[45px]"><a
+                            class="h-full w-full flex items-center ps-4 border-2 border-[transparent] rounded-[2px] hover:border-[#ed1d24]"
+                            href="/fa/index.html">خانه</a></li>
+                    <li class="w-[80%] h-[45px]"><a
+                            class="h-full w-full flex items-center ps-4 border-2 border-[transparent] rounded-[2px] cursor-pointer hover:border-[#ed1d24] p-link">محصولات</a>
+                    </li>
+                    <li class="w-[80%] h-[45px]"><a
+                            class="h-full w-full flex items-center ps-4 border-2 border-[transparent] rounded-[2px] hover:border-[#ed1d24]"
+                            href="">درباره ما</a></li>
+                    <li class="w-[80%] h-[45px]"><a
+                            class="h-full w-full flex items-center ps-4 border-2 border-[transparent] rounded-[2px] hover:border-[#ed1d24]"
+                            href="/fa/contact.html">تماس با ما</a></li>
+                </ul>
+            </nav>
+        </div>
         <section class="flex flex-col items-center justify-center mt-[130px]">
-            <h2 class="text-[#ed1d24] font-bold text-[35px]">با ما در ارتباط باشید</h2>
+            <h2 class="text-[#ed1d24] font-bold lg:text-[35px] text-[25px]">با ما در ارتباط باشید</h2>
         </section>
-        <div class="flex lg:flex-row flex-col items-center w-full lg:w-[auto] h-[100vh] mt-[140px]">
+        <div
+            class="flex lg:flex-row flex-col-reverse items-center w-full lg:w-[auto] h-[100vh] lg:mt-[140px] mt-[300px]">
             <div class="lg:w-[600px] p-5 bg-[#fff]">
                 <div>
                     <script type="text/javascript" src="https://formafzar.com/pages/formbuilder/ravesh-formbuilder.js"
@@ -68,32 +97,113 @@
             </div>
             <div
                 class="bg-[#ED1D24] flex flex-col justify-center h-[85%] lg:w-[400px] w-full relative lg:left-[20px] rounded-[6px] z-[2]">
-                <h3 class="text-[white] text-[20px] font-bold ms-[35px]">شماره تماس</h3>
-                <div class="flex flex-row-reverse pe-[35px]">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="31.568" height="31.128" viewBox="0 0 31.568 31.128">
+                <div class="flex flex-row-reverse pe-[35px] py-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 31.568 31.128">
                         <path id="ic_phone_forwarded_24px"
                             d="M26.676,16.564l7.892-7.782L26.676,1V5.669H20.362v6.226h6.314Zm3.157,7a18.162,18.162,0,0,1-5.635-.887,1.627,1.627,0,0,0-1.61.374l-3.472,3.424a23.585,23.585,0,0,1-10.4-10.257l3.472-3.44a1.48,1.48,0,0,0,.395-1.556,17.457,17.457,0,0,1-.9-5.556A1.572,1.572,0,0,0,10.1,4.113H4.578A1.572,1.572,0,0,0,3,5.669,26.645,26.645,0,0,0,29.832,32.128a1.572,1.572,0,0,0,1.578-1.556V25.124A1.572,1.572,0,0,0,29.832,23.568Z"
                             transform="translate(-3 -1)" fill="white"></path>
                     </svg>
                     <p class="text-white -mt-[3px] me-[8px]">09140071645</p>
+                    <h3 class="text-[white] lg:text-[20px] text-[15px] absolute right-0 font-bold ms-[35px]">شماره تماس
+                    </h3>
                 </div>
-                <h3 class="text-[white] text-[20px] font-bold ms-[35px]">ایمیل</h3>
-                <div class="flex flex-row-reverse pe-[35px]">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="31.57" height="31.13" viewBox="0 0 31.57 31.13">
+                <div class="flex flex-row-reverse pe-[35px] py-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="31.13" viewBox="0 0 31.57 31.13">
                         <path id="ic_email_24px"
                             d="M30.413,4H5.157C3.421,4,2.016,5.751,2.016,7.891L2,31.239c0,2.14,1.421,3.891,3.157,3.891H30.413c1.736,0,3.157-1.751,3.157-3.891V7.891C33.57,5.751,32.149,4,30.413,4Zm0,7.783L17.785,21.511,5.157,11.783V7.891l12.628,9.728L30.413,7.891Z"
                             transform="translate(-2 -4)" fill="white"></path>
                     </svg>
                     <p class="text-white mt-[2px] me-[8px]">contact@varghaapi.ir</p>
+                    <h3 class="text-[white] lg:text-[20px] text-[15px] absolute right-0 font-bold ms-[35px]">ایمیل</h3>
                 </div>
-                <h3 class="text-[white] text-[20px] font-bold ms-[35px]">آدرس</h3>
-                <div class="flex flex-row-reverse pe-[27px]">
-                    <img src="../images/icons/location-pin.svg" width="48px" alt="">
-                    <p class="text-white mt-[9px]">contact@varghaapi.ir</p>
+                <div class="flex flex-row-reverse pe-[35px] py-4">
+                    <img src="../images/icons/location-pin.svg" class="lg:w-[42px] w-[32px]" alt="">
+                    <p class="text-white mt-[3px] lg:mt-[9px]">contact@varghaapi.ir</p>
+                    <h3 class="text-[white] lg:text-[20px] text-[15px] absolute right-0 font-bold ms-[35px]">آدرس</h3>
+                </div>
+            </div>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210.02090515647302!2d51.627401467459116!3d32.62391499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fbc369ba29073d7%3A0xd5b61c00f4386b8a!2sJJFH%2BH22%2C%20Isfahan%2C%20Isfahan%20Province%2C%20Iran!5e0!3m2!1sen!2s!4v1708254792354!5m2!1sen!2s"
+            style="border:0; width: 100%;" class="lg:h-[500px] h-[300px]" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="flex justify-center w-full">
+            <div
+                class="flex flex-wrap lg:flex-row-reverse md:w-full w-[80%] lg:h-[60px] my-[35px] border-[1px] lg:border-0">
+                <div
+                    class="flex items-center justify-center lg:w-[25%] py-4 w-[50%] lg:after:w-[1px] lg:after:h-[40px] lg:after:absolute lg:after:right-0 lg:after:bg-[#E5E5E5] relative border-[1px] lg:border-s-0 border-[#e5e5e5] lg:hover:bg-[#f7f7f7] transition-all">
+                    <img src="../images/icons/shipping1.webp" class="me-3 w-[32px]" alt="free-shipping">
+                    <p>ارسال رایگان</p>
+                </div>
+                <div
+                    class="flex items-center justify-center lg:w-[25%] py-4 w-[50%] lg:after:w-[1px] lg:after:h-[40px] lg:after:absolute lg:after:right-0 lg:after:bg-[#E5E5E5] relative border-[1px] lg:border-x-0 border-[#e5e5e5] lg:hover:bg-[#f7f7f7] transition-all">
+                    <img src="../images/icons/shipping2.webp" class="me-3 w-[32px]" alt="support">
+                    <p>پشتیبانی</p>
+                </div>
+                <div
+                    class="flex items-center justify-center lg:w-[25%] py-4 w-[50%] lg:after:w-[1px] lg:after:h-[40px] lg:after:absolute lg:after:right-0 lg:after:bg-[#E5E5E5] relative border-[1px] lg:border-x-0 border-[#e5e5e5] lg:hover:bg-[#f7f7f7] transition-all">
+                    <img src="../images/icons/shipping3.webp" class="me-3 w-[28px]" alt="guaranteed">
+                    <p>گارانتی</p>
+                </div>
+                <div
+                    class="flex items-center justify-center lg:w-[25%] py-4 w-[50%] lg:after:h-[40px] lg:after:absolute lg:after:right-0 relative border-[1px] lg:border-e-0 border-[#e5e5e5] lg:hover:bg-[#f7f7f7] transition-all">
+                    <img src="../images/icons/shipping4.webp" class="me-3 w-[20px]" alt="secure-payment">
+                    <p>پرداخت امن</p>
                 </div>
             </div>
         </div>
     </main>
+    <footer class="flex justify-center">
+        <section class="flex flex-wrap md:w-[80%] w-full ps-5 py-5">
+            <div class="flex flex-col lg:w-[25%] w-full mb-[20px] px-[20px]">
+                <div class="flex justify-between drawer">
+                    <h3 class="text-[20px]">درباره ما</h3>
+                    <img src="../images/icons/down-chevron.svg" width="24px" class="md:hidden" alt="down-chevron">
+                </div>
+                <div
+                    class="relative top-0 max-h-0 md:max-h-[none] overflow-hidden md:overflow-visible transition-all duration-500">
+                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eligendi,
+                        explicabo exercitationem tempora vel ad molestiae aspernatur deserunt? Asperiores, cum.</p>
+                </div>
+            </div>
+            <div class="flex flex-col lg:w-[25%] md:w-[33.33%] w-full px-[20px]">
+                <div class="flex justify-between drawer">
+                    <h3 class="text-[20px] font-bold  mb-[25px]">لینک های مفید</h3>
+                    <img src="../images/icons/down-chevron.svg" width="24px" class="md:hidden" alt="down-chevron">
+                </div>
+                <div
+                    class="flex flex-col relative top-0 max-h-0 md:max-h-[none] overflow-hidden md:overflow-visible transition-all duration-500">
+                    <a href="" class="mb-[15px]">خانه</a>
+                    <a href="" class="mb-[15px]">محصولات</a>
+                    <a href="contact.html" class="mb-[15px]">تماس با ما</a>
+                </div>
+            </div>
+            <div class="flex flex-col lg:w-[25%] md:w-[33.33%] w-full px-[20px]">
+                <div class="flex justify-between drawer">
+                    <h3 class="text-[20px] font-bold mb-[25px]">لینک های مفید</h3>
+                    <img src="../images/icons/down-chevron.svg" width="24px" class="md:hidden" alt="down-chevron">
+                </div>
+                <div
+                    class="flex flex-col relative top-0 max-h-0 md:max-h-[none] overflow-hidden md:overflow-visible transition-all duration-500">
+                    <a href="" class="mb-[15px]">خانه</a>
+                    <a href="#products" class="mb-[15px]">محصولات</a>
+                    <a href="contact.html" class="mb-[15px]">تماس با ما</a>
+                </div>
+            </div>
+            <div class="flex flex-col lg:w-[25%] md:w-[33.33%] w-full px-[20px]">
+                <div class="flex justify-between drawer">
+                    <h3 class="text-[20px] font-bold mb-[25px]">لینک های مفید</h3>
+                    <img src="../images/icons/down-chevron.svg" width="24px" class="md:hidden" alt="down-chevron">
+                </div>
+                <div
+                    class="flex flex-col relative top-0 max-h-0 md:max-h-[none] overflow-hidden md:overflow-visible transition-all duration-500">
+                    <a href="" class="mb-[15px]">خانه</a>
+                    <a class="mb-[15px] p-link">محصولات</a>
+                    <a href="contact.html" class="mb-[15px]">تماس با ما</a>
+                </div>
+            </div>
+        </section>
+    </footer>
 </body>
 
 </html>

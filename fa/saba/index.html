@@ -17,11 +17,11 @@
     <header class="bg-white flex flex-col items-center justify-center z-[100]">
         <section class="bg-[#212121] flex text-white justify-between items-center ps-5 w-[100%] h-[42px] py-[10px]">
             <div class="flex">
-                <p class="me-2 text-[12px]"><a href="">فروشگاه</a></p>
+                <p class="me-2 text-[12px]"><a href="/fa/index.html">فروشگاه</a></p>
                 <span>|</span>
                 <p class="mx-2 text-[12px]"><a href="">درباره ما</a></p>
                 <span>|</span>
-                <p class="ms-2 text-[12px]"><a href="">تماس با ما</a></p>
+                <p class="ms-2 text-[12px]"><a href="/fa/contact.html">تماس با ما</a></p>
             </div>
             <div class="flex me-5">
                 <a href="https://instagram.com/" target="_blank" class="hover:text-[#ed1d24]">
@@ -34,37 +34,40 @@
             </div>
         </section>
         <section id="header2"
-            class="flex fixed top-[1px] top-[42px] w-[100%] shadow-md bg-white justify-center items-center h-[60px] z-[18]">
+            class="flex fixed top-[42px] w-[100%] shadow-md bg-white justify-center items-center h-[60px] z-[18]">
             <div class="w-[32px] lg:hidden absolute right-[15px] hover:text-[#ed1d24] z-[5]" id="offcanvasheader">
                 <svg xmlns="http://www.w3.org/2000/svg" class="hover:text-[#ed1d24]" viewBox="0 0 512 512">
                     <path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10"
                         stroke-width="32" d="M80 160h352M80 256h352M80 352h352"></path>
                 </svg>
             </div>
-            <div id="logo"
-                class="fixed lg:right-[15px] flex justify-center lg:justify-start items-center w-full h-[38px]">
-                <img src="../../images/logo.png" width="60px" class="h-[45px]" alt="logo">
+            <div id="logo" class="fixed lg:right-[15px] flex justify-center lg:justify-start items-center h-[38px]">
+                <img src="/images/logo.png" width="60px" class="h-[45px]" alt="logo">
                 <h1 class="md:right-[30px] text-[#121416] md:text-[25px] text-[18px]">صفاهان باتری
                     اصفهان</h1>
             </div>
-            <nav class="hidden lg:flex justify-center px-2 mx-5 text-[#121416] relative">
-                <a href="../index.html"
+            <nav class="hidden lg:flex lg:bottom-[10px] justify-center px-2 mx-5 text-[#121416]">
+                <a href="/fa/index.html"
                     class="bg-[inherit] rounded-full border-2 border-[#ED1D24] mx-2 px-4 navlink">خانه</a>
-                <a href="" class="bg-[inherit] rounded-full border-2 border-[white] mx-2 px-4 navlink">محصولات</a>
+                <a href="#products"
+                    class="bg-[inherit] rounded-full border-2 border-[white] mx-2 px-4 navlink">محصولات</a>
                 <a href="" class="bg-[inherit] rounded-full border-2 border-[white] mx-2 px-4 navlink">درباره
                     ما</a>
-                <a href="" class="bg-[inherit] rounded-full border-2 border-[white] mx-2 px-4 navlink">تماس
+                <a href="/fa/contact.html"
+                    class="bg-[inherit] rounded-full border-2 border-[white] mx-2 px-4 navlink">تماس
                     با ما</a>
             </nav>
         </section>
     </header>
-    <main class="mt-[150px] flex flex-col justify-center items-center bg-[white]">
-        <div id="cover" class="fixed top-0 bottom-0 left-0 right-0 bg-[black] z-[20] opacity-40 hidden"></div>
+    <main class="flex flex-col items-center justify-center mt-[105px] p-4">
+        <div id="cover" class="fixed top-0 bottom-0 left-0 right-0 bg-[black] z-[19] opacity-40 hidden"></div>
         <div class="top-0 bottom-0 -right-[150%] -right-0 max-w-[300px] w-full fixed bg-white transition-all duration-500 z-[20]"
             id="offcanvas">
-            <div class="flex">
-                <img src="../../images/logo.png" width="60px" height="45px" alt="logo">
+            <div class="flex relative p-3">
+                <img src="/images/logo.png" width="60px" height="45px" alt="logo">
                 <h1 class="md:text-[25px] text-[18px]">صفاهان باتری اصفهان</h1>
+                <img src="/images/icons/close.svg" width="16px" class="absolute left-[10px] top-[20px] cursor-pointer"
+                    id="close-btn" alt="close-icon">
             </div>
             <nav>
                 <ul class="flex flex-col items-center">
@@ -72,8 +75,8 @@
                             class="h-full w-full flex items-center ps-4 border-2 border-[transparent] rounded-[2px] hover:border-[#ed1d24]"
                             href="">خانه</a></li>
                     <li class="w-[80%] h-[45px]"><a
-                            class="h-full w-full flex items-center ps-4 border-2 border-[transparent] rounded-[2px] hover:border-[#ed1d24]"
-                            href="">محصولات</a></li>
+                            class="h-full w-full flex items-center ps-4 border-2 border-[transparent] rounded-[2px] cursor-pointer hover:border-[#ed1d24] p-link">محصولات</a>
+                    </li>
                     <li class="w-[80%] h-[45px]"><a
                             class="h-full w-full flex items-center ps-4 border-2 border-[transparent] rounded-[2px] hover:border-[#ed1d24]"
                             href="">درباره ما</a></li>
@@ -138,15 +141,54 @@
         </div>
     </main>
     <footer class="flex justify-center">
-        <section class="flex flex-col items-center w-[80%] ps-5 py-5">
-            <h3 class="text-[35px]">درباره ما</h3>
-            <p class="lg:w-[40%] w-full text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                fuga ratione
-                aspernatur
-                laboriosam
-                voluptatibus vero ullam natus quasi reprehenderit sed officiis quibusdam alias dolore, obcaecati
-                repellat velit iste odit maxime quia? Dolores in numquam ad iste, vel enim, neque expedita officia vitae
-                similique nulla temporibus omnis, id maxime non amet?</p>
+        <section class="flex flex-wrap md:w-[80%] w-full ps-5 py-5">
+            <div class="flex flex-col lg:w-[25%] w-full mb-[20px] px-[20px]">
+                <div class="flex justify-between drawer">
+                    <h3 class="text-[20px]">درباره ما</h3>
+                    <img src="/images/icons/down-chevron.svg" width="24px" class="md:hidden" alt="down-chevron">
+                </div>
+                <div
+                    class="relative top-0 max-h-0 md:max-h-[none] overflow-hidden md:overflow-visible transition-all duration-500">
+                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eligendi,
+                        explicabo exercitationem tempora vel ad molestiae aspernatur deserunt? Asperiores, cum.</p>
+                </div>
+            </div>
+            <div class="flex flex-col lg:w-[25%] md:w-[33.33%] w-full px-[20px]">
+                <div class="flex justify-between drawer">
+                    <h3 class="text-[20px] font-bold  mb-[25px]">لینک های مفید</h3>
+                    <img src="/images/icons/down-chevron.svg" width="24px" class="md:hidden" alt="down-chevron">
+                </div>
+                <div
+                    class="flex flex-col relative top-0 max-h-0 md:max-h-[none] overflow-hidden md:overflow-visible transition-all duration-500">
+                    <a href="" class="mb-[15px]">خانه</a>
+                    <a href="" class="mb-[15px]">محصولات</a>
+                    <a href="/fa/contact.html" class="mb-[15px]">تماس با ما</a>
+                </div>
+            </div>
+            <div class="flex flex-col lg:w-[25%] md:w-[33.33%] w-full px-[20px]">
+                <div class="flex justify-between drawer">
+                    <h3 class="text-[20px] font-bold mb-[25px]">لینک های مفید</h3>
+                    <img src="/images/icons/down-chevron.svg" width="24px" class="md:hidden" alt="down-chevron">
+                </div>
+                <div
+                    class="flex flex-col relative top-0 max-h-0 md:max-h-[none] overflow-hidden md:overflow-visible transition-all duration-500">
+                    <a href="" class="mb-[15px]">خانه</a>
+                    <a href="#products" class="mb-[15px]">محصولات</a>
+                    <a href="/fa/contact.html" class="mb-[15px]">تماس با ما</a>
+                </div>
+            </div>
+            <div class="flex flex-col lg:w-[25%] md:w-[33.33%] w-full px-[20px]">
+                <div class="flex justify-between drawer">
+                    <h3 class="text-[20px] font-bold mb-[25px]">لینک های مفید</h3>
+                    <img src="/images/icons/down-chevron.svg" width="24px" class="md:hidden" alt="down-chevron">
+                </div>
+                <div
+                    class="flex flex-col relative top-0 max-h-0 md:max-h-[none] overflow-hidden md:overflow-visible transition-all duration-500">
+                    <a href="" class="mb-[15px]">خانه</a>
+                    <a class="mb-[15px] p-link">محصولات</a>
+                    <a href="/fa/contact.html" class="mb-[15px]">تماس با ما</a>
+                </div>
+            </div>
         </section>
     </footer>
 </body>
