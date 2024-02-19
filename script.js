@@ -6,6 +6,7 @@ window.addEventListener('scroll', (event) => {
         document.getElementById("header2").classList.add("fixed");
     }
 });
+
 function preventScroll(e) {
     e.preventDefault();
     e.stopPropagation();
@@ -32,6 +33,12 @@ cover.addEventListener('click', () => {
 document.getElementById('close-btn').addEventListener('click', () => {
     closeCanvas();
 });
+
+for (const link of document.getElementsByClassName('p-link')) {
+    link.addEventListener('click', () => {
+        closeCanvas();
+    });
+}
 
 for (const drawer of document.getElementsByClassName('drawer')) {
     drawer.addEventListener('click', function () {
